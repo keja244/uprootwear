@@ -83,8 +83,8 @@ const users = () => ls.get(K.users, []);
 function seedDemo() {
   const u = users();
   if (!u.find(x => x.email === 'demo@uprootwear.id')) {
-    u.push({ id: 'u_demo', name: 'Dina Pratiwi', email: 'demo@uprootwear.id', password: 'demo123', phone: '081234567890',
-      addresses: [{ id: 'a_demo', label: 'Rumah', name: 'Dina Pratiwi', phone: '081234567890', street: 'Jl. Gatot Subroto No. 45', city: 'Medan', postal: '20112' }] });
+    u.push({ id: 'u_demo', name: 'Dhea Yara', email: 'demo@uprootwear.id', password: 'demo123', phone: '081234567890',
+      addresses: [{ id: 'a_demo', label: 'Rumah', name: 'Dhea Yara', phone: '081234567890', street: 'Jl. Gatot Subroto No. 45', city: 'Medan', postal: '20112' }] });
     ls.set(K.users, u);
   }
 }
